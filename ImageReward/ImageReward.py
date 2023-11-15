@@ -15,6 +15,7 @@ import torch.nn as nn
 from PIL import Image
 from .models.BLIP.blip_pretrain import BLIP_Pretrain
 from torchvision.transforms import Compose, Resize, CenterCrop, ToTensor, Normalize
+import numpy as np
 
 try:
     from torchvision.transforms import InterpolationMode
@@ -112,6 +113,8 @@ class ImageReward(nn.Module):
         # image encode
         if isinstance(image, Image.Image):
             pil_image = image
+        if isinstance(image, np.ndarray):
+            pil_image = Image.fromarray(image)
         elif isinstance(image, str):
             if os.path.isfile(image):
                 pil_image = Image.open(image)
