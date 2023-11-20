@@ -20,7 +20,7 @@ setup(
         packages=find_packages(exclude=["tests*"]),
         install_requires=[
             'timm',
-            'transformers>=4.27.4',
+            'transformers>=4.27',
             'fairscale==0.4.13',
             'huggingface_hub>=0.13.4',
             'diffusers>=0.16.0',
