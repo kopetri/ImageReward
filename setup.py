@@ -21,7 +21,7 @@ setup(
         install_requires=[
             'timm',
             'transformers>=4.27',
-            'fairscale==0.4.13',
+            'fairscale==0.4.4',
             'huggingface_hub>=0.13.4',
             'diffusers>=0.16.0',
             'accelerate>=0.16.0',
