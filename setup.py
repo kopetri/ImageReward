@@ -19,7 +19,7 @@ setup(
         long_description_content_type='text/markdown',
         packages=find_packages(exclude=["tests*"]),
         install_requires=[
-            'timm==0.6.13',
+            'timm',
             'transformers>=4.27.4',
             'fairscale==0.4.13',
             'huggingface_hub>=0.13.4',
