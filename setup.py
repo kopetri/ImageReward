@@ -10,10 +10,10 @@ DESCRIPTION = 'ImageReward'
 setup(
         name="image-reward", 
         py_modules = ["ImageReward"],
-        version="1.5",
+        version="1.5.1",
         author="Jiazheng Xu, et al.",
         author_email="<xjz22@mails.tsinghua.edu.cn>",
-        url="https://github.com/THUDM/ImageReward",
+        url="https://github.com/kopetri/ImageReward",
         description=DESCRIPTION,
         long_description=long_description,
         long_description_content_type='text/markdown',
